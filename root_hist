@@ -1,0 +1,400 @@
+TH1F *rasty = new TH1F("rasty", "Raster Y Current - Coincidence Peak Cut", 150, 6100, 6400)
+T->Draw("RrbGmp.Raster.rawcur.y>>rasty","((DR.evtypebits>>1)&1) && L.s0.la_p>100 && R.s0.la_p>100 && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])>=1225) && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])<=1275)")
+TH1F *rasty = new TH1F("rasty", "Raster Y Current - Coincidence Peak Cut", 75, 6100, 6400)
+T->Draw("RrbGmp.Raster.rawcur.y>>rasty","((DR.evtypebits>>1)&1) && L.s0.la_p>100 && R.s0.la_p>100 && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])>=1225) && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])<=1275)")
+T->Draw("RrbGmp.Raster.rawcur.y>>rasty","((DR.evtypebits>>1)&1) && L.s0.la_p>100 && R.s0.la_p>100 && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])>=1225) && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])<=1275)")
+.q
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399.root")
+new TBrowser
+RIGHT->Draw("unser_c:Entry$")
+RIGHT->Draw("unser_c:Entry$","","L")
+T->Draw("right_unser_c:Entry$","","L")
+T->Draw("evright_unser_c:Entry$","","L")
+T->Draw("evright_unser_c:Entry$","Entry$<1000","L")
+T->Draw("evright_unser_r:Entry$","Entry$<1000","L")
+T->Draw("evright_unser_r:Entry$","","L")
+.x replay_coinc.C 
+.x replay_norm.C
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_888.root")
+.ls
+new TBrowser
+T->Print("N.*")
+.q
+.x replay_norm.C
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_888.root")
+new TBrowser
+new TBrowser
+.q
+.x replay_norm.C
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_888.root")
+new TBrowser
+T->Print("*N.*)
+@
+T->Print("*N.*")
+exit
+.q
+.x replay_online.C
+.x replay_online.C
+new TBrowser
+.x replay_online.C
+.x replay_online.C
+new TBrowser
+.x replay_online.C
+.q
+TChain *test = new TChain("T")
+test->Add("RootFiles/coinc_test_857_1.root")
+test->Add("RootFiles/coinc_test_857_2.root")
+test->Add("RootFiles/coinc_test_857_3.root")
+test->Add("RootFiles/coinc_test_857_4.root")
+test->Add("RootFiles/coinc_test_857_5.root")
+T->Draw("RrbGmp.Raster.rawcur.y","((DR.evtypebits>>1)&1) && L.s0.la_p>100 && R.s0.la_p>100 && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])>=1225 && (L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])<=1275)")
+TH1F *rasty = new TH1F("rasty", "Raster Y - Coincidence Peak Cut", 75, 6100, 6400)
+T->Draw("RrbGmp.Raster.rawcur.y>>rasty","((DR.evtypebits>>1)&1) && L.s0.la_p>100 && R.s0.la_p>100 && ((L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])>=1225 && (L.s0.lt[0]-R.s0.lt[0]+DR.Retiming_L[0])<=1275)")
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.q
+.x replay_online_894
+.x replay_online.C
+.x replay_norm_test.C(489)
+.x replay_norm_test.C(489)
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_489.root")
+new TBrowser
+new TBrowser
+.x replay_norm_test.C(489)
+.x replay_norm_test.C(489)
+.x replay_norm_test.C(489)
+.x replay_online.C
+.x replay_norm.C
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_895.root")
+new TBrowser
+T->Print("N.*")
+T->Draw("N.right.current.unewr:right.clkcount")
+T->Draw("N.right.current.unewr:right.clkcount")
+.q
+.x deadtime.C
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_895.root")
+T->Draw("N.right.charge.d3:right.clkcount")
+T->Draw("N.right.charge_d3:right.clkcount")
+T->Draw("N.right.charge_d3")
+T->Draw("N.right.charge_d3:right.clkcount")
+T->Print("clk*")
+T->Print("*clk*")
+T->Draw("N.right.charge_d3:right_clkcount")
+T->Draw("N.right.charge_d3:right_clkcount","","L")
+.q
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_895.root")
+new TBrowser
+.q
+.x replay_norm.C
+.q
+.x replay_norm.C
+TFile *_file0 = TFile::Open("RootFiles/coinc_norm_895.root")
+new TBrowser
+.q
+.x replay_coinc.C
+.x replay_coinc.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.q
+.x replay_coinc.C
+.x replay_coinc.C(891)
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_895.root")
+new TBrowser
+.x replay_coinc.C(892)
+.q
+.x replay_coinc.C(730)
+.x replay_coinc.C(731)
+.x replay_coinc.C(739)
+.x replay_coinc.C(740)
+.x replay_coinc.C(747)
+.x replay_coinc.C(748)
+.q
+.x replay_online.C 896
+.q
+.x replay_online.C 896
+.x replay_online.C
+.q
+.x replay_coinc.C(755)
+.x replay_coinc.C(756)
+.x replay_coinc.C(773)
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_773.root")
+T->Draw("N.right.charge_u3")
+T->Draw("N.right.charge_d3")
+T->Draw("N.right.charge_d3:right_clkcount")
+T->Draw("N.right.charge_d3:right_clkcount","","L")
+T->Draw("N.right.charge_d10:right_clkcount","","L")
+T->Draw("N.right.current_d10r:right_clkcount","","L")
+T->Draw("N.right.current_d10:right_clkcount","","L")
+T->Draw("N.right.current_d3:right_clkcount","","L")
+T->Draw("right.bcm_d3r:right_clkcount")
+T->Draw("right.bcm.d3r:right_clkcount")
+T->Draw("right.bcm_d3_r:right_clkcount")
+T->Draw("right.bcm_d3c:right_clkcount")
+T->Print("*d3*")
+T->Draw("right_bcm_d3c:right_clkcount")
+T->Draw("right_bcm_d3r:right_clkcount")
+T->Draw("right_bcm_d3r:right_clkcount","","L")
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_730.root")
+T->Draw("right_bcm_d3r:right_clkcount","","L")
+T->Draw("N.right.current_d3:right_clkcount","","L")
+T->Draw("N.right.charge_d3:right_clkcount","","L")
+.x replay_coinc.C(763)
+.x replay_coinc.C(898)
+.x replay_coinc.C
+.x replay_coinc.C(898)
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_online.C
+.x replay_coinc.C
+TFile *_file0 = TFile::Open("/adaqfs/home/a-onl/tritium/replay/RootFiles/coinc_test_908.root")
+T->Draw("R.s2.la[6]")
+T->Draw("R.s2.la[6]>>h(4000,0,4000)")
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_857_1.root")
+T->Draw("DR.t1:DR.t3")
+T->Draw("DR.t1:DR.l1a")
+.q
+.x replay_coinc.C(930)
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_930.root")
+T->Draw("right_unser_r:clkcount")
+T->Draw("right_unser_r:right_clkcount")
+T->Draw("right_unser_r:right_clkcount","","L")
+T->Draw("evright_unser_r:evright_clkcount","","L")
+T->Draw("evright_unser_r:Entry$","","L")
+T->Draw("Entry$","evright_unser_r*(DR.t8c==1)","L")
+T->Draw("Entry$","evright_unser_r*(DR.bit8==1)","L")
+T->Draw("Entry$","evright_unser_r*(DR.bit3==1)","L")
+T->Draw("Entry$","evright_unser_r*()","L")
+T->Draw("Entry$","evright_unser_r","L")
+T->Draw("DR.bit3")
+T->Draw("DR.bit8")
+T->Draw("Entry$","evright_unser_r*(DR.bit8>0)","L")
+T->Draw("Entry$","evright_unser_r*(DR.bit8)","L")
+T->Draw("Entry$","evright_unser_r*(DR.bit8==1)","L")
+T->Draw("DR.bit8")
+T->Draw("DR.bit1")
+T->Draw("DR.bit2")
+T->Draw("DR.bit2")
+T->Draw("DR.bit3")
+T->Draw("Entry$","evright_unser_r*((DR.evtypebits>>8)&1)","L")
+T->Draw("evright_clkcount","evright_unser_r*((DR.evtypebits>>8)&1)","L")
+T->Draw("evright_clkcount","evright_unser_r*((DR.evtypebits>>3)&1)","L")
+T->Draw("evright_clkcount","evright_unser_r","L")
+T->Draw("evright_clkcount","evright_unser_r","L")
+T->Draw("evright_clkcount","evright_unser_r","L")
+T->Draw("Entry$","evright_unser_r","L")
+EVRIGHT->Draw("Entry$","unser_r","L")
+EVRIGHT->Draw("Entry$>>h1","unser_r","L")
+EVRIGHT->Draw("unser_r>>h1","Entry&","L")
+EVRIGHT->Draw("unser_r>>h1","Entry$","L")
+EVRIGHT->Draw("unser_r>>h1","","L")
+EVRIGHT->Draw("unser_r>>h1","","L")
+EVRIGHT->Draw("unser_r","","L")
+EVRIGHT->Draw("unser_r","Entry$","L")
+79*0.247
+.q
+.x replay_coinc.C(931)
+.x replay_coinc.C(932)
+.x replay_coinc.C(933)
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_931.root")
+EVRIGHT->Draw("unser_r","Entry$","L")
+EVRIGHT->Draw("unser_r>>h1","Entry$","L")
+h1->Integral(514000,517000)
+h1->Integral()
+EVRIGHT->Draw("unser_r>>h1(1000,500000,520000)","Entry$","L")
+EVRIGHT->Draw("unser_r>>h1(100,500000,520000)","Entry$","L")
+h1->GetXaxis()->GetBin(516000)
+h1->GetXaxis()->FindBin(516000)
+h1->GetXaxis()->FindBin(514000)
+h1->GetXaxis()->FindBin(518000)
+h1->Integral(71,91)
+EVRIGHT->Draw("Entry$>>h1","unser_r","L")
+EVRIGHT->Draw("Entry$>>h2","unser_r","L")
+EVRIGHT->Draw("Entry$>>h1","unser_c","L")
+EVRIGHT->Draw("Entry$","unser_c","L")
+EVRIGHT->Draw("Entry$","unser_r","L")
+EVRIGHT->Draw("unser_r>>h1(100,500000,520000)","Entry$","L")
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_932.root")
+EVRIGHT->Draw("unser_r>>h1(100,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_933.root")
+EVRIGHT->Draw("unser_r>>h1(100,500000,520000)","Entry$","L")
+20*247
+80*247
+24*247
+56*247
+EVRIGHT->Draw("unser_r>>h4(100,500000,520000)","Entry$","L")
+EVRIGHT->Draw("Entry$>>h4","unser_r","L")
+EVRIGHT->Draw("Entry$>>h4","unser_r","L")
+EVRIGHT->Draw("Entry$>>h11","unser_r","L")
+EVRIGHT->Draw("Entry$>>h11(25,0,25)","unser_r","L")
+EVRIGHT->Draw("unser_r>>h14(100,500000,520000)","Entry$","L")
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399.root")
+EVRIGHT->Draw("unser_r>>h14(100,500000,520000)","Entry$","L")
+EVRIGHT->Draw("Entry$","unser_r","L")
+RIGHT->Draw("Entry$","unser_r","L")
+RIGHT->Draw("Entry$","unser_r","L")
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399.root")
+RIGHT->Draw("Entry$","unser_r","L")
+EVRIGHT->Draw("Entry$","unser_r","L")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+EVRIGHT->Draw("unser_r>>h14(100,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_1.root")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+EVRIGHT->Draw("unser_r>>h14(100,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_2.root")
+EVRIGHT->Draw("unser_r>>h14(100,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_3.root")
+EVRIGHT->Draw("unser_r>>h14(100,500000,520000)","Entry$","L")
+EVRIGHT->Draw("unser_r>>h14(200,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_4.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_5.root")
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400_1.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400_2.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,520000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400_3.root")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400_2.root")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+EVRIGHT->Draw("unser_r>>h14(200,500000,530000)","Entry$","L")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400_1.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_4.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399_3.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400.root")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_630.root")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+EVRIGHT->Draw("bcm_d3r","Entry$","L")
+EVRIGHT->Draw("unser_r>>h14(200,500000,540000)","Entry$","L")
+EVRIGHT->Draw("unser_r:Entry$","","L")
+RIGHT->Draw("unser_r:Entry$","","L")
+.
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_400.root")
+run =630
+TChain* t = new TChain("RIGHT");  
+  
+  //   TString dir = "/lustre/expphy/work/halla/triton/shujie/tritium/rootfiles/";
+  TString basename = Form("coinc_test_%d",run);
+     
+  //   basename.Prepend(dir);
+     
+  TString rootfile = basename + ".root";
+   
+  Long_t split=0;
+  while ( !gSystem->AccessPathName(rootfile.Data()) ) {
+    t->Add(rootfile.Data());
+    cout << "ROOT file " << rootfile << " added to TChain." << endl;
+    split++;
+    rootfile = basename + "_" + split + ".root";
+  }
+  if (!t->GetEntries()) {
+    cerr << "Can not find root file for run " << run << endl;
+    //cerr << rootfile.Data() << endl;
+    cerr << "Quit now." << endl;
+    return;
+  }
+.q
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_933.root")
+EVRIGHT->Draw("unser_r")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_630.root")
+EVRIGHT->Draw("bcm_d3r")
+EVRIGHT->Draw("bcm_d3r:Entry$")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_630_1.root")
+EVRIGHT->Draw("bcm_d3r:Entry$","","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1150)<50","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1100)<50","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1200)<50","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1300)<50","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1400)<50","L")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1400)<500","L")
+EVRIGHT->Draw("bcm_dnewr:Entry$","abs(Entry$-1400)<500","sameL")
+EVRIGHT->Draw("bcm_d1r:Entry$","abs(Entry$-1475)<50","L")
+EVRIGHT->Draw("bcm_dnewr:Entry$","abs(Entry$-1475)<50","sameL")
+new TCanvas
+EVRIGHT->Draw("bcm_d1c:Entry$","abs(Entry$-1475)<50","L")
+EVRIGHT->Draw("bcm_dnewc:Entry$","abs(Entry$-1475)<50","L")
+EVRIGHT->Draw("bcm_d1c:Entry$","abs(Entry$-1475)<50","sameL")
+EVRIGHT->Draw("bcm_dnewc:Entry$","abs(Entry$-1475)<50","sameL")
+EVRIGHT->Draw("bcm_d1c:Entry$","abs(Entry$-1475)<50","sameL")
+EVRIGHT->Draw("bcm_d1c:Entry$","abs(Entry$-1475)<50","L")
+EVRIGHT->Draw("bcm_dnewc:Entry$","abs(Entry$-1475)<50","L")
+new TCanvas
+EVRIGHT->Draw("bcm_d1c:Entry$","abs(Entry$-1475)<50","L")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_630.root")
+EVRIGHT->Draw("unser_r")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_399.root")
+EVRIGHT->Draw("unser_r")
+EVRIGHT->Draw("unser_r>>h(100,505000,530000)")
+EVRIGHT->Draw("unser_r>>h(100,505000,510000)")
+EVRIGHT->Draw("unser_r>>h(500,505000,510000)")
+EVRIGHT->Draw("unser_r>>h(50,505000,510000)")
+TFile *_file0 = TFile::Open("RootFiles/coinc_test_933.root")
+EVRIGHT->Draw("unser_r>>h(50,505000,510000)")
+RIGHT->Draw("unser_r>>h(50,505000,510000)")
+RIGHT->Draw("unser_r>>h(50,505000,540000)")
+.q
+.q
+.x replay_online.C
+.x replay_coinc.C
+.q
+.L replay_coinc.C+
+exit
+.q
+.q
+.x replay_coinc.C
+.q
+.L replay_coinc.C++
+.L ReplayCore64.C+
+.q
+.L ReplayCore64.C+
+.q
+.L ReplayCore64.C+
+.x replay_coinc.C
+.L replay_coinc.C+
+.q
+.L ReplayCore64.C+
+.x replay_coinc.C
+.q
+.x replay_coinc.C
+.x replay_coinc.C
+.q
+.x replay_coinc.C
+.q
+.L ReplayCore64.C
+.q
+.L ReplayCore64.C+
+.L ReplayCore64.C++
+.x replay_coinc.C
+.q
+.L replay_coinc.C+
+.q
+.x replay_coinc.C

@@ -1,0 +1,32 @@
+void sync_check(Int_t flag)
+{
+  gStyle->SetOptStat(0);
+  TTree *t = (TTree*)gDirectory->Get("T");
+  int nentries=t->GetEntries();
+//  int nn= const_cast<const int&>(nentries);
+
+  Double_t y[1000000], x[1000000];
+
+  double n_roc3;
+  T->SetBranchAddress("DL.evtroc5",&n_roc3);
+
+  for (int i=0; i<nentries/1000; i++)
+  {
+    T->GetEntry(i);
+    cout<<n_roc3<<endl;
+    y[i]=n_roc3;
+    x[i]=i;
+  }
+
+  if (flag == 1)
+  {
+    t->Draw("DL.evtroc5:Entry$");
+    TGraph * gr1 = new TGraph(nentries, x, y);
+    gr1->SetMarkerStyle(22);
+    gr1->Draw("AP");
+  }
+  if (flag == 2)
+  {
+//    t->Draw("DL.evtyperoc5:DL.evtyperoc5","","*");
+  }
+}

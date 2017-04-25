@@ -1,0 +1,487 @@
+.x check_electrons.C(13961)
+.q
+.x check_electrons.C(13963)
+.q
+.x check_electrons.C(22871)
+.q
+.x check_electrons.C(13964)
+.q
+.x check_electrons.C(13965)
+.q
+.x check_electrons.C(13966)
+.q
+.x check_electrons.C(13967)
+.q
+.q
+.x check_electrons.C(22872)
+.q
+.x check_electrons.C(13968)
+.q
+.x check_electrons.C(13969)
+.q
+.q
+.x check_electrons.C(22873)
+.q
+.x check_electrons.C(22874)
+.q
+.x check_electrons.C(22875)
+.q
+.x check_electrons.C(22876)
+.q
+.x check_electrons.C(22877)
+.q
+.x check_electrons.C(22878)
+.q
+.x check_electrons.C(13970)
+.q
+.x check_electrons.C(13970)
+.q
+.x check_electrons.C(22879)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.x check_electrons.C(13962)
+.x check_electrons.C(22870)
+.q
+.q
+.x check_electrons_all.C(0)
+.!gnome-terminal&
+.x check_electrons.C(13978)
+.x check_electrons.C(13979)
+.q
+.x check_electrons.C(13979)
+.q
+.x check_electrons_all.C(0)
+.q
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.q
+.q
+.x check_electrons.C(22888)
+.q
+.x check_electrons.C(13980)
+.q
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons.C(13981)
+.q
+.x check_electrons_all.C(1)
+.q
+.q
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons.C(13992)
+.q
+.x check_electrons.C(13993)
+.q
+.x check_electrons.C(13994)
+.q
+.x check_electrons.C(13995)
+.q
+.x check_electrons.C(13996)
+.q
+.x check_electrons.C(13997)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons.C(22902)
+.q
+.x check_electrons.C(22903)
+.q
+.x check_electrons.C(22904)
+.q
+.x check_electrons.C(22905)
+.q
+.x check_electrons.C(22905)
+.q
+.q
+.x check_electrons.C(22906)
+.q
+.q
+.x check_electrons_all.C(1)
+.x check_electrons.C(13998)
+.q
+.q
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(0)
+.q
+.q
+.x check_electrons.C(22908)
+.q
+.x check_electrons.C(22907)
+.q
+.x check_electrons.C(22909)
+.q
+.q
+.q
+.x check_electrons.C(13999)
+.q
+.x check_electrons.C(14000)
+.q
+.x check_electrons.C(14001)
+.q
+.q
+.x check_electrons.C(22910)
+.q
+.q
+.x check_electrons.C(22910)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons.C(14000)
+.x check_electrons.C(13999)
+.q
+.x check_electrons.C(14000)
+.q
+.x check_electrons.C(14001)
+.q
+.x check_electrons.C(14002)
+.q
+.x check_electrons.C(14003)
+.q
+.x check_electrons.C(14001)
+.q
+.x check_electrons.C(14000)
+.q
+.x check_electrons.C(14001)
+.q
+.x check_electrons.C(13999)
+.q
+.x check_electrons.C(14001)
+.x check_electrons.C(14002)
+.q
+.x check_electrons.C(14002)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons.C(22910)
+.q
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(0)
+.q
+.q
+.x check_electrons.C(22915)
+.q
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.!halog &
+.q
+.q
+.x check_electrons_mon.C
+.x check_electrons_mon.C
+.x check_electrons_all.C
+.q
+.x check_electrons_mon.C(1)
+.q
+.q
+.q
+.x check_electrons_all.C
+.q
+.!gnome-terminal&
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(1)
+.q
+.q
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.x check_electrons_all.C
+.q
+.q
+.x check_electrons_all.C(1)
+T->Draw("R.tr.vz>>(400, -0.2, 0.2)","R.cer.asum_c>500&&(R.ps.e+R.sh.e)/L.tr.p[0]/1000.&& R.tr.n==1 && sqrt(EKR.W2)<1.1 && sqrt(EKR.W2)>0.8")
+T->Draw("R.tr.vz>>(400, -0.2, 0.2)","R.cer.asum_c>500&&(R.ps.e+R.sh.e)/R.tr.p[0]/1000.&& R.tr.n==1 && sqrt(EKR.W2)<1.1 && sqrt(EKR.W2)>0.8")
+T->Draw("R.tr.vz>>(400, -0.2, 0.2)","R.cer.asum_c>500&&(R.ps.e+R.sh.e)/R.tr.p[0]/1000.>0.5&& R.tr.n==1 && sqrt(EKR.W2)<1.1 && sqrt(EKR.W2)>0.8")
+T->Draw("R.tr.vz>>(400, -0.2, 0.2)","R.cer.asum_c>500&&(R.ps.e+R.sh.e)/R.tr.p[0]/1000.>0.8&& R.tr.n==1 && sqrt(EKR.W2)<1.1 && sqrt(EKR.W2)>0.8")
+T->Draw("R.tr.vz>>(400, -0.2, 0.2)","R.cer.asum_c>500&&(R.ps.e+R.sh.e)/R.tr.p[0]/1000.>0.8 && R.tr.n==1 && sqrt(EKR.W2)<1.1 && sqrt(EKR.W2)>0.8")
+T->Draw("R.tr.vz>>(400, -0.2, 0.2)","R.cer.asum_c>500&&(R.ps.e+R.sh.e)/R.tr.p[0]/1000.>0.5&& R.tr.n==1 && sqrt(EKR.W2)<1.1 && sqrt(EKR.W2)>0.8")
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C
+.x check_electrons_all.C(-1)
+.q
+.x check_electrons_all.C(-1)
+.q
+.q
+.x check_electrons_all.C
+.x check_electrons_all.C(-1)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons.C
+.x check_electrons.C(0)
+.x check_electrons.C(1)
+\
+.q
+.q
+.x check_electrons_all.C()
+    t->Add("~/gmp/replay/Rootfiles/right_gmp_2296[0-9]*.root");
+    t->Add("~/gmp/replay/Rootfiles/right_gmp_2296[0-9]*.root");
+    t->Add("~/gmp/replay/Rootfiles/right_gmp_2296[0-9]*.root");
+    t->Add("~/gmp/replay/Rootfiles/right_gmp_2296[0-9]*.root");
+.q
+.q
+.x check_electrons_all.C()
+.q
+.x check_electrons_all.C(-1)
+.q
+check_electrons.C
+.x check_electrons.C
+.q
+.q
+.x check_electrons(14089)
+.q
+.x check_electrons(14090)
+.L check_electrons.C
+.x check_electrons(14090)
+check_electrons(14090)
+.q
+.L check_electrons.C
+ check_electrons(14090)
+.q
+.L check_electrons.C
+ check_electrons(14090)
+.q
+.x check_electrons_all.C(0)
+.q
+.L check_electrons.C
+ check_electrons(14091)
+.q
+.L check_electrons.C
+ check_electrons(14090)
+.!gnome-terminal&
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(-2)
+.x check_electrons.C(14094)
+.x check_electrons.C(22989)
+.q
+.q
+.x check_electrons.C(14093)
+.q
+.x check_electrons.C(14095)
+.q
+.x check_electrons.C(22990)
+.q
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.q
+.x check_electrons.C(22991)
+.q
+.x check_electrons.C(22993)
+.q
+.x check_electrons.C(14102)
+.q
+.x check_electrons.C(22994)
+.q
+.x check_electrons.C(22991)
+.q
+.x check_electrons.C(22993)
+.q
+.x check_electrons.C(22994)
+.q
+.x check_electrons_all.C(1)
+.x check_electrons.C(14103)
+.q
+.x check_electrons_all.C(0)
+.q
+.q
+.x check_electrons.C(14104)
+.x check_electrons.C(22995)
+.q
+.q
+.x check_electrons.C(22996)
+.q
+.x check_electrons.C(14105)
+.q
+.x check_electrons_all.C(0)
+.x check_electrons_all.C(1)
+.q
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.x check_electrons_all.C(1)
+.!less check_electrons_all.C
+.!vi check_electrons_all.C
+.q
+.x test.C(1)
+.q
+.x test.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x test.C(1)
+.q
+.x test.C(1)
+.q
+.x test.C
+.q
+.x test.C
+.q
+.x test.C
+.q
+.x test.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(0)
+.q
+.x check_electrons.C(13940)
+.q
+.q
+.x check_electrons.C(14001)
+.x check_electrons.C(14027)
+.x check_electrons.C(14056)
+.x check_electrons.C(14063)
+.x check_electrons.C(14074)
+.x check_electrons.C(14090)
+.x check_electrons.C(14094)
+.q
+.x check_electrons.C(22894)
+.x check_electrons.C(22966)
+.q
+.x check_electrons.C(23120)
+.q
+.x check_electrons.C(23187)
+.x check_electrons.C(23008)
+.x check_electrons.C(23060)
+.x check_electrons.C(23582)
+.x check_electrons.C(23490)
+.x check_electrons.C(23570)
+.x check_electrons.C(23600)
+.q
+.x check_electrons_all.C(1)
+.q
+.x check_electrons_all.C(1)
+.!gnome-terminal &
+.q
+.x check_electrons_test.C(1)
+.q
+.x check_electrons_test.C(1)
+.q
+.x check_electrons_test.C(1)
+.q
+.x check_electrons_test.C(1)
+.q
+TFile *_file0 = TFile::Open("../RootFiles/coinc_online_640.root")
+T->Draw("L.rbx")
+T->Draw("L.tr.rbx")
+T->Print("rbx")
+T->Print("*rbx*")
+T->Draw("L.rbx")
+T->Draw("R.rbx")
+new TBrowser
+T->Draw("rbx")
+.q
+TFile *_file0 = TFile::Open("../RootFiles/coinc_online_640.root")
+T->Draw("rbx")
+.q
+.q

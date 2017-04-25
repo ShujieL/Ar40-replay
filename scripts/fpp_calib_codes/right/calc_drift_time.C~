@@ -1,0 +1,101 @@
+#include <iostream>
+
+
+Double_t fitf(Double_t *x,Double_t *par) {
+  Double_t arg = 0;
+  Int_t n;
+  Int_t nord = 7;
+  for (n=0;n<nord;n++) arg = arg + par[n]*TMath::Power(x[0],n);
+  return arg;
+}
+Int_t calc_drift_time(){
+  TString ss,sss,scut;
+  Int_t runnum = 4275;
+  cout<<"Run number? "<<endl;
+  cin>>runnum;
+  TString froot;
+  froot = Form("/adaqfs/home/a-onl/gmp/replay_yang/replay/Rootfiles/right_gmp_%d.root",runnum);
+ // froot = Form("~/xiaohui/GEp/rootfile/fppHVscan_%d.root",runnum);
+  f = new TFile(froot);
+  TTree *t1 = (TTree*)f->Get("T");                  //Get loaded tree 
+  TH1F *tdc[24]; 
+  // the histogram order is v1-3,u1-3,v4-6,u4-6,u7-8,v7-8,x1-2,u9-11,v9-11
+  char pltype[24] = {'v','v','v','u','u','u','v','v','v','u','u','u',,'u','u','v','v','x','x','u','u','u','v','v','v'};
+  Int_t nplane[24] = {1,2,3,1,2,3,4,5,6,4,5,6,7,8,7,8,1,2,9,10,11,9,10,11} ;
+  Int_t pl,k;
+  Int_t hbinmax=150;
+  Int_t hbinmin=0;
+  Int_t hbinnum=150; // bin in 1ns
+  for( pl=0; pl<6; pl++) {
+    cout << "Plane : " << pl+1 << endl  ;
+    ss = Form("tdc%c%d",pltype[pl],nplane[pl]);
+    tdc[pl] = new TH1F (ss,ss,hbinnum,hbinmin,hbinmax);
+    sss = Form("R.fpp.%c%d.ltdc_c",pltype[pl],nplane[pl]);
+    t1->Project(ss,sss);
+  }
+  //
+  TString tt,ttopen,ttclose;
+  ttopen = Form("calc_drift_time_%d.ps[",runnum);
+  tt = Form("calc_drift_time_%d.ps",runnum);
+  ttclose = Form("calc_drift_time_%d.ps]",runnum);
+  TCanvas *d0 = new TCanvas("d0","d0",1000,600);
+  Int_t test,ii;
+  Int_t runsum_ctdc[150];
+  Float_t dist[150],sum,factor;
+  Float_t time[150];
+  Float_t tbinsize = 1.0 ; // Time bin size in ns
+  for (ii=0;ii<hbinnum;ii++) time[ii] = (ii+.5)*tbinsize;
+  d0->Divide(1,2);
+  d0->Print(ttopen);
+  Int_t nord = 7;
+  Double_t param[24][7];
+  for (pl=0;pl<6;pl++){
+    d0->cd(1);
+    tdc[pl]->Draw();
+    d0->Modified();
+    d0->Update();
+    runsum_ctdc[0] = tdc[pl]->GetBinContent(1);
+    sum = tdc[pl]->GetBinContent(1);
+    for (ii=2;ii<hbinnum+1;ii++) {
+      runsum_ctdc[ii-1] = runsum_ctdc[ii-2] + tdc[pl]->GetBinContent(ii);
+      sum = sum +  tdc[pl]->GetBinContent(ii);
+    }
+    if ( sum > 0 ) {
+      factor = 0.522/sum*tbinsize ;
+      for (ii=0;ii<hbinnum;ii++) dist[ii] = factor*runsum_ctdc[ii];
+   //   gr = new TGraph(hbinmax,time,dist);
+      d0->cd(2);
+      //gr->SetTitle("Drfit dist(cm)  vs Time (ns)");
+      //gr->SetMarkerColor(4);
+      //gr->SetMarkerStyle(21);
+      //gr->Draw("ALP");
+      TH1F *h1 = new TH1F("h1","Drift time vs time",hbinmax,0,hbinmax);
+      for (ii=0;ii<hbinnum;ii++) h1->Fill(time[ii],dist[ii]);
+      h1->Draw();
+      d0->Modified();
+      d0->Update();
+      
+      TF1 *f1 = new TF1("f1",fitf,0,hbinmax,nord);
+      f1->SetLineColor(2);
+      h1->Fit("f1","R");
+      d0->Modified();
+      d0->Update();
+      Double_t par[7] ;
+      f1->GetParameters(par);
+      for(ii=0;ii<nord;ii++) param[pl][ii]= par[ii] ;
+      d0->Print(tt);
+    }
+  }
+  d0->Print(ttclose);
+  //
+  fname = "new_drift_time_poly.dat" ;
+  cout << " Writing to file : " << fname << endl ;
+  FILE *ff1 = fopen(fname,"w");
+for ( pl=0;pl<6;pl++ ) {
+  fprintf(ff1,"%15.5e",param[pl][0]);
+  for (ii=1;ii<nord;ii++) fprintf(ff1,"%13.5e",param[pl][ii]);
+  fprintf(ff1,"\n");
+}
+ fclose(ff1);
+ 
+}
